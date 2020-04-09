@@ -16,6 +16,7 @@ const userRouter = require('./routes/userRoutes.js')
 const reviewRouter = require('./routes/reviewRoutes.js')
 const bookingRouter = require('./routes/bookingRoutes.js')
 const viewRouter = require('./routes/viewRoutes.js')
+// start express app
 const app = express()
 
 app.set('view engine', 'ejs')
