@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,700" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Natours</title>
+  </head>
+  <body>
+    <%- include('header'); -%>
+    <main class="main">
+      <div class="error">
+        <div class="error__title">
+          <h2 class="heading-secondary heading-secondary--error">Uh oh! Something went wrong!</h2>
+          <h2 class="error__emoji">😢 🤯</h2>
+        </div>
+        <div class="error__msg"><%=msg%></div>
+      </div>
+    </main>
+  </body>
+  <%- include('footer'); -%>
+</html>

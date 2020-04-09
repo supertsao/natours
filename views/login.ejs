@@ -1,0 +1,26 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,700" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Natours | <%=title;%></title>
+  </head>
+  <body>
+    <%- include('header'); -%>
+    <main class="main">
+        <div class="login-form">
+            <h2 class="heading-secondary ma-bt-lg">Log into your account</h2>
+            <form class="form form--login">
+                <div class="form__group"><label class="form__label" for="email">Email address</label><input class="form__input" id="email" type="email" placeholder="you@example.com" required="required" /></div>
+                <div class="form__group ma-bt-md"><label class="form__label" for="password">Password</label><input class="form__input" id="password" type="password" placeholder="••••••••" required="required" minlength="8" /></div>
+                <div class="form__group"><button type="submit" class="btn btn--green" >Login</button></div>
+            </form>
+        </div>
+    </main>
+    <%- include('footer'); -%>
+  </body>
+</html>
